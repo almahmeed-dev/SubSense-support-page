@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubSense Support</title>
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --text-color: #333;
+            --bg-color: #f5f5f7;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-methods {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SubSense Support</h1>
+            <p>Get help with your subscription management app</p>
+        </header>
+
+        <section class="section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <p class="faq-question">How do I add a new subscription?</p>
+                <p>Tap the + button in the top right corner of the main screen, then fill in the subscription details.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">Can I set reminders for upcoming payments?</p>
+                <p>Yes! When adding or editing a subscription, enable reminders and choose how many days before the payment you'd like to be notified.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">How do I export my subscription data?</p>
+                <p>Go to Settings > Data Management > Export Data, then choose your preferred format (JSON or CSV).</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Troubleshooting</h2>
+            <div class="faq-item">
+                <p class="faq-question">App is not syncing properly</p>
+                <p>Try these steps:</p>
+                <ol>
+                    <li>Check your internet connection</li>
+                    <li>Force close and reopen the app</li>
+                    <li>Sign out and sign back in</li>
+                    <li>If issues persist, contact support</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Contact Us</h2>
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <span>📧</span>
+                    <a href="mailto:support@subsense.app">support@subsense.app</a>
+                </div>
+                <div class="contact-method">
+                    <span>🌐</span>
+                    <a href="https://subsense.app/support" target="_blank">Visit our Support Center</a>
+                </div>
+                <div class="contact-method">
+                    <span>💬</span>
+                    <a href="https://twitter.com/subsenseapp" target="_blank">Follow us on Twitter</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
