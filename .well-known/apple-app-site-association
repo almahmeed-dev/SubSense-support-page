@@ -1,0 +1,9 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [{
+      "appID": "<TeamID>.com.yourapp.bundle",
+      "paths": [ "/invite/*" ]
+    }]
+  }
+}
