@@ -1,10 +1,12 @@
 const crypto = require('crypto')
 const { Pool } = require('pg')
-const pool = new Pool({ connectionString: process.env.DATABASE_URL })
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL
+})
 
 exports.handler = async (event) => {
-  // TODO: authenticate inviter (e.g. via a JWT in Authorization header)
-  const inviterId = /* extract from event.headers.authorization */
+  // TODO: replace with real auth
+  const inviterId = event.headers.authorization || ''
   if (!inviterId) {
     return { statusCode: 401, body: 'Unauthorized' }
   }
